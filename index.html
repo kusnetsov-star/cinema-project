@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Cinema - сайт кинотеатра</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <view class="navbar container">
+        <a href="/">
+          <img src="img/logo.svg" alt="Logo" />
+        </a>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link">Главная</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Фильмы</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Кинотеатры</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">События</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Поддержка</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user">
+          <span class=""> Привет, Мила </span>
+          <img class="avatar" src="img/avatar.jpg" alt="" />
+        </div>
+      </view>
+      <!--/.navbar-->
+      <view class="film container">
+        <view class="film-info">
+          <small class="film-title-small">Avengers: Infinity War</small>
+          <h1 class="film-title">Мстители: война бесконечности</h1>
+          <p class="film-description">
+            Пока Мстители и их союзники продолжают защищать мир от различных
+            опасностей, с которыми не смог бы справиться один супергерой, новая
+            угроза возникает из космоса: Танос. Межгалактический тиран
+            преследует цель собрать все шесть Камней Бесконечности - артефакты
+            невероятной силы, с помощью которых можно менять реальность по
+            своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому
+            моменту – судьба Земли никогда ещё не была столь неопределённой.
+          </p>
+          <view class="film-details">
+            <view class="time">
+              <img src="img/clock.svg" alt="clock" class="time-icon" />
+              <span class="time-counter">240 мин.</span>
+            </view>
+
+            <view class="rating">
+              <img src="img/imdb.png" alt="imdb logo" class="rating-icon" />
+            </view>
+
+            <span class="rating-counter">
+              <strong class="rating-current">9.2</strong> / 10
+            </span>
+          </view>
+          <!-- /.film-details -->
+        </view>
+        <!-- /.film-info -->
+        <a href="#" class="film-trailer">
+          <svg
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="50" cy="50" r="50" fill="white" />
+            <g clip-path="url(#clip0_1_158)">
+              <path
+                d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z"
+                fill="#F20D01"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_158">
+                <rect
+                  width="41.8013"
+                  height="41.8013"
+                  fill="white"
+                  transform="translate(34.1837 29.0816)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </view>
+      <!-- /.film -->
+      <view class="session container">
+        <view class="session-date">
+          <span class="session-label">Дата</span>
+          <view class="session-date-block">
+            <view class="session-date-item">
+              <span class="session-month">АПР</span>
+              <span class="session-day">27</span>
+              <span class="session-week">пт</span>
+            </view>
+            <view class="session-date-item">
+              <span class="session-month">АПР</span>
+              <span class="session-day">28</span>
+              <span class="session-week">сб</span>
+            </view>
+            <view class="session-date-item">
+              <span class="session-month">АПР</span>
+              <span class="session-day">29</span>
+              <span class="session-week">вс</span>
+            </view>
+            <view class="session-date-item">
+              <span class="session-month">АПР</span>
+              <span class="session-day">30</span>
+              <span class="session-week">пн</span>
+            </view>
+          </view>
+        </view>
+        <!-- /.date -->
+        <view class="session-cinema">
+          <span class="session-label">Кинотеатр</span>
+          <select class="select select-cinema" name="cinema" id="">
+            <option value="Октябрь, ул. Калужская 28">Октябрь, ул. Калужская 28</option>
+            <option value="CinemaMall, ул. Хороводная 5">CinemaMall, ул. Хороводная 5</option>
+            <option value="IMAX, ул. Ленина 12">IMAX, ул. Ленина 12</option>
+          </select>
+        </view>
+        <!-- /.cinema -->
+         <view class="session-time">
+          <span class="session-label">Время</span>
+          <select class="select" name="cinema" id="">
+            <option value="12:00">12:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:25">17:25</option>
+          </select>
+         </view>
+         <!-- /.session-time -->
+      </view>
+      <!-- /.session -->
+    </header>
+  </body>
+</html>
